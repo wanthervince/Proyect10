@@ -1,0 +1,13 @@
+.conten {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(29, 29, 49);
+  color: aliceblue;
+}
+h1 {
+  margin: 3rem;
+  font-size: 4rem;
+}

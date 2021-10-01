@@ -1,0 +1,32 @@
+.contenCard {
+  margin-top: 2rem;
+  background-color: #575cba;
+  width: 38rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+h2 {
+  margin-top: 20px;
+}
+.table {
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.table > table {
+  width: 100%;
+  margin: 1rem 0;
+  color: aliceblue;
+}
+tr {
+  border: none;
+}
+td {
+  padding: 7px 0;
+}
+.icon {
+  cursor: pointer;
+}

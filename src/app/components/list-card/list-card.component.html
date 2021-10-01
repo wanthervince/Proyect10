@@ -1,0 +1,25 @@
+<div class="contenCard">
+  <h2>List Card</h2>
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Nº Credid Card</td>
+          <td>Expired Date</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let card of cards">
+          <td>{{ card.name }}</td>
+          <td>{{ card.nrocard }}</td>
+          <td>{{ card.fexpired }}</td>
+          <td (click)="editCreditCard(card)" class="icon">✎</td>
+          <td (click)="deleteCreditCard(card.id)" class="icon">❌</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

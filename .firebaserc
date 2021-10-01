@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tarjetacredito-4904b": {
+      "hosting": {
+        "Proyect10": [
+          "tarjetacredito-4904b"
+        ]
+      }
+    }
+  }
+}

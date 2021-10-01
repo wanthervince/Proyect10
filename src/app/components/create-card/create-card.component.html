@@ -1,0 +1,50 @@
+<form [formGroup]="form" class="contenCard" (ngSubmit)="createCard()">
+  <div class="label">
+    <label for="name">Nombre del Titular</label>
+    <input
+      [class.verde]="this.form.get('name')?.valid"
+      class="input"
+      type="text"
+      formControlName="name"
+      id="name"
+      placeholder="Triana Paredes"
+    />
+  </div>
+  <div class="label">
+    <label for="nroCard">Nº Tarjeta</label>
+    <input
+      [class.verde]="this.form.get('nrocard')?.valid"
+      class="input"
+      type="text"
+      formControlName="nrocard"
+      id="nroCard"
+      placeholder="1111 2222 3333 4444"
+      maxlength="16"
+    />
+  </div>
+  <div class="label-input">
+    <div>
+      <label for="fechaExpiration">Fecha de Expiracion</label>
+      <input
+        [class.verde]="this.form.get('fexpired')?.valid"
+        type="text"
+        formControlName="fexpired"
+        id="fechaExpiration"
+        placeholder="11/2222"
+        maxlength="7"
+      />
+    </div>
+    <div>
+      <label for="CVV">CVV</label>
+      <input
+        [class.verde]="this.form.get('cvv')?.valid"
+        type="text"
+        formControlName="cvv"
+        id="CVV"
+        placeholder="123"
+        maxlength="3"
+      />
+    </div>
+  </div>
+  <button>{{ editCreate.toUpperCase() }}</button>
+</form>
